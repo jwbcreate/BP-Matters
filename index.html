@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP Matters</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+<body>
+    
+    <div class="image-container">
+        <img class="image" src="https://fastly.picsum.photos/id/385/5000/3333.jpg?hmac=OHEESWvgwObboeW2_H3cihqhLxUY94ljIM31-MokMmY" alt="A beautiful image">
+        <h1 class="text-on-image">Hello!</h1>
+        <p id="intro-text">Take charge of your blood pressure today</p>
+    
+    <!-- Pop-up window -->
+        <div id="popup-container" class="popup">
+            <div class="popup-content">
+                <p>Have you taken your blood pressure today?</p>
+                <span class="close" onclick="closePopup()">&times;</span>
+                <button class=popBtn onclick="closePopup('Yes')">Yes</button>
+                <button class=popBtn onclick="closePopup('I will do it now')">I will do it now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="column">
+            <h2>Exercise Suggestions</h2>
+            <img src="https://fastly.picsum.photos/id/389/4562/3042.jpg?hmac=vnZGl2BO_TMZ7PmMnfvGQ69vNYy4auG7odEZWpc6cOA">
+            <p id="exercise-suggestion"></p>
+            <button id="generate-exercise-button">Generate New Suggestion</button>
+        </div>
+    
+        <div class="column">
+            <h2>Food Suggestions</h2>
+            <img src="https://fastly.picsum.photos/id/429/4128/2322.jpg?hmac=_mAS4ToWrJBx29qI2YNbOQ9IyOevQr01DEuCbArqthc"/>
+            <p id="food-suggestion"></p>
+            <button id="generate-food-button">Generate New Suggestion</button>
+        </div>
+
+        <div class="column">
+            <h2>Resources</h2>
+            <img src="https://fastly.picsum.photos/id/885/4000/2667.jpg?hmac=IrjRbqugGjfrXfEv6t65cpdv8j6EFpGT7ZOJipcgHJc">
+            <ul>
+                <li><a class="resources" href="https://www.healthxchange.sg/high-blood-pressure/essential-guide-to-high-blood-pressure/high-blood-pressure-dangers-causes-risk-factors">High blood pressure: Dangers, Causes and Risk Factors</a></li>
+                <li><a class="resources" href="https://www.healthhub.sg/a-z/diseases-and-conditions/high-blood-pressure-healthy-eating-guide#2">Healthy eating guide for high blood pressure</a></li>
+                <li><a class="resources" href="https://www.healthhub.sg/programmes/nutrition-hub/eat-less?utm_source=google&utm_medium=paid-search&utm_campaign=fy23-salt&utm_term=sem&utm_content=fy23-salt-sem-recipes#lower-sodium-recipes">Recipes for less salt</a></li>
+                <li><a class="resources" href="https://www.healthhub.sg/programmes/aap/easy-exercises">Easy exercises for seniors</a></li>
+            </ul>
+        </div>
+
+    </div> 
+
+   
+    <div class="font-adjust">
+        <button class="big-font" onclick="adjustFontSize('increase')">+A</button>
+        <button class="small-font" onclick="adjustFontSize('decrease')">-A</button>
+    </div>
+
+
+<script src="index copy.js"></script>
+
+</body>
+
+</html>
